@@ -76,3 +76,9 @@ console.log(typeof 123n); // Виведе: bigint
 console.log(typeof {}); // Виведе: object
 console.log(typeof []); // Виведе: object
 console.log(typeof function () {}); // Виведе: function
+
+// Add event listener for the button with id 'myFirstButtonId'
+document.getElementById("myFirstButtonId").onclick = function(event) {
+  event.preventDefault(); // Зупиняє стандартну дію події
+  alert("Hello World!");
+};
