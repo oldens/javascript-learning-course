@@ -38,6 +38,48 @@ let multiDimensionalArray = [
 
 console.log(multiDimensionalArray[1][2]); // Виведе: 6
 
+// ОСНОВНІ МЕТОДИ
+
+// push() додає один або кілька елементів до кінця масиву.
+let fruits = ["яблуко", "банан"];
+fruits.push("апельсин");
+console.log(fruits); // ["яблуко", "банан", "апельсин"]
+
+// pop() видаляє останній елемент з масиву і повертає його.
+let lastFruit = fruits.pop();
+console.log(lastFruit); // "апельсин"
+console.log(fruits); // ["яблуко", "банан"]
+
+// shift() видаляє перший елемент масиву, а решта елементів зсуваються на одну позицію вліво.
+let firstFruit = fruits.shift();
+console.log(firstFruit); // "яблуко"
+console.log(fruits); // ["банан"]
+
+// unshift() додає один або кілька елементів на початок масиву, зсуваючи всі інші елементи вправо.
+fruits.unshift("яблуко");
+console.log(fruits); // ["яблуко", "банан"]
+
+// ІТЕРАЦІЙНІ МЕТОДИ МАСИВІВ
+
+// map() створює новий масив з результатами виклику заданої функції для кожного елемента масиву.
+let numbers = [1, 2, 3, 4];
+let doubled = numbers.map(function(num) {
+  return num * 2;
+});
+console.log(doubled); // [2, 4, 6, 8]
+
+// filter() створює новий масив з усіма елементами, які пройшли перевірку, задану у функції.
+let evenNumbers = numbers.filter(function(num) {
+  return num % 2 === 0;
+});
+console.log(evenNumbers); // [2, 4]
+
+// reduce() застосовує функцію до кожного елемента масиву (зліва направо), щоб звести його до одного значення.
+let sum = numbers.reduce(function(total, num) {
+  return total + num;
+}, 0);
+console.log(sum); // 10
+
 // ЦИКЛИ (LOOPS)
 // Цикли у JavaScript використовуються для виконання повторюваних дій, таких як обхід масивів або виконання коду до досягнення певної умови.
 
