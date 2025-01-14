@@ -8,8 +8,8 @@ Welcome to the JavaScript Learning Course! This course is designed to help stude
    - [Lecture 1: JavaScript Basics](lectures/lecture1.md)
    - [Lecture 2: JavaScript Functions](lectures/lecture2.md)
 2. [Exercises](#exercises)
-   - [Exercise 1: JavaScript Variables](exercises/exercise1.md)
-   - [Exercise 2: JavaScript Loops](exercises/exercise2.md)
+   - [Exercise 1: JavaScript Variables](lectures/lesson1/exercise1.md)
+   - [Exercise 2: JavaScript Loops](lectures/lesson2/exercise2.md)
 3. [Projects](#projects)
    - [Project 1: Building a Simple JavaScript Application](projects/project1.md)
 
@@ -24,8 +24,8 @@ The lectures cover various topics in JavaScript, starting from the basics and pr
 
 The exercises are designed to help you practice and reinforce the concepts you learn in the lectures. Each exercise includes instructions, examples, and tasks for you to complete.
 
-- [Exercise 1: JavaScript Variables](exercises/exercise1.md)
-- [Exercise 2: JavaScript Loops](exercises/exercise2.md)
+- [Exercise 1: JavaScript Variables](lectures/lesson1/exercise1.md)
+- [Exercise 2: JavaScript Loops](lectures/lesson2/exercise2.md)
 
 ## Projects
 
