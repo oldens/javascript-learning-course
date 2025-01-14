@@ -1,44 +1,44 @@
-# Exercise 1: JavaScript Variables
+# Вправа 1: Змінні JavaScript
 
-Welcome to the first exercise of the JavaScript Learning Course! In this exercise, you will practice working with JavaScript variables.
+Ласкаво просимо до першої вправи курсу вивчення JavaScript! У цій вправі ви будете практикувати роботу зі змінними JavaScript.
 
-## Instructions
+## Інструкції
 
-1. Declare a variable named `myNumber` and assign it the value `10`.
-2. Declare a variable named `myString` and assign it the value `"Hello, world!"`.
-3. Declare a constant named `myConstant` and assign it the value `3.14`.
-4. Print the values of `myNumber`, `myString`, and `myConstant` to the console.
-5. Change the value of `myNumber` to `20` and print the new value to the console.
-6. Try to change the value of `myConstant` and observe what happens.
+1. Оголосіть змінну з ім'ям `myNumber` та присвойте їй значення `10`.
+2. Оголосіть змінну з ім'ям `myString` та присвойте їй значення `"Привіт, світ!"`.
+3. Оголосіть константу з ім'ям `myConstant` та присвойте їй значення `3.14`.
+4. Виведіть значення `myNumber`, `myString` та `myConstant` у консоль.
+5. Змініть значення `myNumber` на `20` та виведіть нове значення у консоль.
+6. Спробуйте змінити значення `myConstant` та спостерігайте, що станеться.
 
-## Example
+## Приклад
 
-Here is an example of how to complete the exercise:
+Ось приклад того, як виконати вправу:
 
 ```javascript
-// Step 1
+// Крок 1
 var myNumber = 10;
 
-// Step 2
-let myString = "Hello, world!";
+// Крок 2
+let myString = "Привіт, світ!";
 
-// Step 3
+// Крок 3
 const myConstant = 3.14;
 
-// Step 4
-console.log(myNumber); // Output: 10
-console.log(myString); // Output: Hello, world!
-console.log(myConstant); // Output: 3.14
+// Крок 4
+console.log(myNumber); // Вивід: 10
+console.log(myString); // Вивід: Привіт, світ!
+console.log(myConstant); // Вивід: 3.14
 
-// Step 5
+// Крок 5
 myNumber = 20;
-console.log(myNumber); // Output: 20
+console.log(myNumber); // Вивід: 20
 
-// Step 6
-// Uncomment the following line to see what happens
-// myConstant = 2.71; // This will cause an error because constants cannot be reassigned
+// Крок 6
+// Розкоментуйте наступний рядок, щоб побачити, що станеться
+// myConstant = 2.71; // Це викличе помилку, оскільки константи не можна переназначати
 ```
 
-## Conclusion
+## Висновок
 
-In this exercise, you practiced working with JavaScript variables, including declaring variables, assigning values, and printing values to the console. You also learned about the difference between variables declared with `var`, `let`, and `const`.
+У цій вправі ви практикували роботу зі змінними JavaScript, включаючи оголошення змінних, присвоєння значень та виведення значень у консоль. Ви також дізналися про різницю між змінними, оголошеними за допомогою `var`, `let` та `const`.

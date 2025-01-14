@@ -1,56 +1,56 @@
-# Lecture 2: JavaScript Functions
+# Лекція 2: Функції JavaScript
 
-Welcome to the second lecture of the JavaScript Learning Course! In this lecture, we will cover JavaScript functions in detail, including how to define, call, and use functions effectively.
+Ласкаво просимо на другу лекцію курсу вивчення JavaScript! У цій лекції ми детально розглянемо функції JavaScript, включаючи те, як визначати, викликати та ефективно використовувати функції.
 
-## Table of Contents
+## Зміст
 
-1. Introduction to Functions
-2. Defining Functions
-3. Calling Functions
-4. Function Parameters and Arguments
-5. Return Values
-6. Function Expressions
-7. Arrow Functions
-8. Higher-Order Functions
-9. Conclusion
+1. Вступ до функцій
+2. Визначення функцій
+3. Виклик функцій
+4. Параметри та аргументи функцій
+5. Повернення значень
+6. Функціональні вирази
+7. Стрілкові функції
+8. Функції вищого порядку
+9. Висновок
 
-## 1. Introduction to Functions
+## 1. Вступ до функцій
 
-Functions are reusable blocks of code that perform a specific task. They help in organizing code, making it more readable and maintainable. Functions can be defined once and called multiple times throughout a program.
+Функції - це багаторазові блоки коду, які виконують певне завдання. Вони допомагають організувати код, роблячи його більш читабельним та підтримуваним. Функції можна визначити один раз і викликати кілька разів протягом програми.
 
-## 2. Defining Functions
+## 2. Визначення функцій
 
-To define a function in JavaScript, you can use the `function` keyword followed by the function name, parentheses, and a block of code enclosed in curly braces. Here is an example:
+Для визначення функції в JavaScript можна використовувати ключове слово `function`, за яким слідує ім'я функції, дужки та блок коду, укладений у фігурні дужки. Ось приклад:
 
 ```javascript
 function greet(name) {
-  console.log("Hello, " + name + "!");
+  console.log("Привіт, " + name + "!");
 }
 ```
 
-## 3. Calling Functions
+## 3. Виклик функцій
 
-To call a function, you simply use the function name followed by parentheses. If the function requires arguments, you can pass them inside the parentheses. Here is an example:
+Для виклику функції просто використовуйте ім'я функції, за яким слідують дужки. Якщо функція потребує аргументів, ви можете передати їх у дужках. Ось приклад:
 
 ```javascript
-greet("Alice"); // Output: Hello, Alice!
+greet("Аліса"); // Вивід: Привіт, Аліса!
 ```
 
-## 4. Function Parameters and Arguments
+## 4. Параметри та аргументи функцій
 
-Function parameters are the names listed in the function definition, while arguments are the values passed to the function when it is called. Here is an example:
+Параметри функції - це імена, вказані у визначенні функції, тоді як аргументи - це значення, передані функції під час її виклику. Ось приклад:
 
 ```javascript
 function add(a, b) {
   return a + b;
 }
 
-console.log(add(2, 3)); // Output: 5
+console.log(add(2, 3)); // Вивід: 5
 ```
 
-## 5. Return Values
+## 5. Повернення значень
 
-Functions can return a value using the `return` statement. The returned value can be stored in a variable or used directly. Here is an example:
+Функції можуть повертати значення за допомогою оператора `return`. Повернене значення можна зберегти у змінній або використовувати безпосередньо. Ось приклад:
 
 ```javascript
 function multiply(a, b) {
@@ -58,36 +58,36 @@ function multiply(a, b) {
 }
 
 let result = multiply(4, 5);
-console.log(result); // Output: 20
+console.log(result); // Вивід: 20
 ```
 
-## 6. Function Expressions
+## 6. Функціональні вирази
 
-Function expressions allow you to define a function and assign it to a variable. Here is an example:
+Функціональні вирази дозволяють визначати функцію та присвоювати її змінній. Ось приклад:
 
 ```javascript
 let greet = function(name) {
-  console.log("Hello, " + name + "!");
+  console.log("Привіт, " + name + "!");
 };
 
-greet("Bob"); // Output: Hello, Bob!
+greet("Боб"); // Вивід: Привіт, Боб!
 ```
 
-## 7. Arrow Functions
+## 7. Стрілкові функції
 
-Arrow functions provide a shorter syntax for defining functions. They are especially useful for writing concise code. Here is an example:
+Стрілкові функції надають коротший синтаксис для визначення функцій. Вони особливо корисні для написання лаконічного коду. Ось приклад:
 
 ```javascript
 let greet = (name) => {
-  console.log("Hello, " + name + "!");
+  console.log("Привіт, " + name + "!");
 };
 
-greet("Charlie"); // Output: Hello, Charlie!
+greet("Чарлі"); // Вивід: Привіт, Чарлі!
 ```
 
-## 8. Higher-Order Functions
+## 8. Функції вищого порядку
 
-Higher-order functions are functions that can take other functions as arguments or return functions as their result. They are a powerful feature of JavaScript. Here is an example:
+Функції вищого порядку - це функції, які можуть приймати інші функції як аргументи або повертати функції як результат. Вони є потужною особливістю JavaScript. Ось приклад:
 
 ```javascript
 function applyOperation(a, b, operation) {
@@ -95,9 +95,9 @@ function applyOperation(a, b, operation) {
 }
 
 let sum = applyOperation(3, 4, (x, y) => x + y);
-console.log(sum); // Output: 7
+console.log(sum); // Вивід: 7
 ```
 
-## 9. Conclusion
+## 9. Висновок
 
-In this lecture, we covered JavaScript functions in detail, including how to define, call, and use functions effectively. We also explored function parameters, return values, function expressions, arrow functions, and higher-order functions. Understanding functions is crucial for writing efficient and maintainable JavaScript code.
+У цій лекції ми детально розглянули функції JavaScript, включаючи те, як визначати, викликати та ефективно використовувати функції. Ми також розглянули параметри функцій, повернення значень, функціональні вирази, стрілкові функції та функції вищого порядку. Розуміння функцій є важливим для написання ефективного та підтримуваного коду на JavaScript.

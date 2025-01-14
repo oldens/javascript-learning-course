@@ -1,46 +1,46 @@
-# Exercise 2: JavaScript Loops
+# Вправа 2: Цикли JavaScript
 
-Welcome to the second exercise of the JavaScript Learning Course! In this exercise, you will practice working with JavaScript loops.
+Ласкаво просимо до другої вправи курсу вивчення JavaScript! У цій вправі ви будете практикувати роботу з циклами JavaScript.
 
-## Instructions
+## Інструкції
 
-1. Create a `for` loop that prints the numbers from 1 to 10 to the console.
-2. Create a `while` loop that prints the numbers from 10 to 1 to the console.
-3. Create a `for` loop that iterates over an array of numbers and prints each number to the console.
-4. Create a `while` loop that iterates over an array of strings and prints each string to the console.
+1. Створіть цикл `for`, який виводить числа від 1 до 10 у консоль.
+2. Створіть цикл `while`, який виводить числа від 10 до 1 у консоль.
+3. Створіть цикл `for`, який перебирає масив чисел і виводить кожне число у консоль.
+4. Створіть цикл `while`, який перебирає масив рядків і виводить кожен рядок у консоль.
 
-## Example
+## Приклад
 
-Here is an example of how to complete the exercise:
+Ось приклад того, як виконати вправу:
 
 ```javascript
-// Step 1
+// Крок 1
 for (let i = 1; i <= 10; i++) {
-  console.log(i); // Output: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+  console.log(i); // Вивід: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 }
 
-// Step 2
+// Крок 2
 let j = 10;
 while (j >= 1) {
-  console.log(j); // Output: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+  console.log(j); // Вивід: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
   j--;
 }
 
-// Step 3
+// Крок 3
 let numbers = [1, 2, 3, 4, 5];
 for (let k = 0; k < numbers.length; k++) {
-  console.log(numbers[k]); // Output: 1, 2, 3, 4, 5
+  console.log(numbers[k]); // Вивід: 1, 2, 3, 4, 5
 }
 
-// Step 4
-let strings = ["Hello", "World", "JavaScript"];
+// Крок 4
+let strings = ["Привіт", "Світ", "JavaScript"];
 let l = 0;
 while (l < strings.length) {
-  console.log(strings[l]); // Output: Hello, World, JavaScript
+  console.log(strings[l]); // Вивід: Привіт, Світ, JavaScript
   l++;
 }
 ```
 
-## Conclusion
+## Висновок
 
-In this exercise, you practiced working with JavaScript loops, including `for` loops and `while` loops. You learned how to use loops to iterate over numbers and arrays, and print values to the console.
+У цій вправі ви практикували роботу з циклами JavaScript, включаючи цикли `for` та `while`. Ви дізналися, як використовувати цикли для перебору чисел і масивів, та виведення значень у консоль.

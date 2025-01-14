@@ -1,76 +1,76 @@
-# Lecture 1: JavaScript Basics
+# Лекція 1: Основи JavaScript
 
-Welcome to the first lecture of the JavaScript Learning Course! In this lecture, we will cover the basics of JavaScript, including its history, syntax, and basic programming concepts.
+Ласкаво просимо на першу лекцію курсу вивчення JavaScript! У цій лекції ми розглянемо основи JavaScript, включаючи його історію, синтаксис та основні програмні концепції.
 
-## Table of Contents
+## Зміст
 
-1. Introduction to JavaScript
-2. JavaScript Syntax
-3. Variables and Data Types
-4. Operators
-5. Control Structures
-6. Functions
-7. Conclusion
+1. Вступ до JavaScript
+2. Синтаксис JavaScript
+3. Змінні та типи даних
+4. Оператори
+5. Структури управління
+6. Функції
+7. Висновок
 
-## 1. Introduction to JavaScript
+## 1. Вступ до JavaScript
 
-JavaScript is a versatile and powerful programming language that is widely used for web development. It was created by Brendan Eich in 1995 and has since become one of the most popular programming languages in the world. JavaScript is primarily used to create interactive and dynamic web pages, but it can also be used for server-side development, mobile app development, and more.
+JavaScript - це універсальна та потужна мова програмування, яка широко використовується для веб-розробки. Вона була створена Бренданом Айком у 1995 році і з тих пір стала однією з найпопулярніших мов програмування у світі. JavaScript в основному використовується для створення інтерактивних та динамічних веб-сторінок, але також може використовуватися для серверної розробки, розробки мобільних додатків та багато іншого.
 
-## 2. JavaScript Syntax
+## 2. Синтаксис JavaScript
 
-JavaScript syntax refers to the set of rules that define how a JavaScript program is written and interpreted. Here are some key points about JavaScript syntax:
+Синтаксис JavaScript відноситься до набору правил, які визначають, як написана та інтерпретується програма на JavaScript. Ось деякі ключові моменти про синтаксис JavaScript:
 
-- JavaScript is case-sensitive, meaning that `myVariable` and `myvariable` are considered different variables.
-- Statements in JavaScript are usually terminated with a semicolon (`;`).
-- JavaScript code can be written within `<script>` tags in an HTML file or in external `.js` files.
+- JavaScript чутливий до регістру, тобто `myVariable` та `myvariable` вважаються різними змінними.
+- Оператори в JavaScript зазвичай завершуються крапкою з комою (`;`).
+- Код JavaScript може бути написаний у тегах `<script>` у HTML-файлі або у зовнішніх файлах `.js`.
 
-## 3. Variables and Data Types
+## 3. Змінні та типи даних
 
-Variables are used to store data in a JavaScript program. To declare a variable, you can use the `var`, `let`, or `const` keywords. Here are some examples:
+Змінні використовуються для зберігання даних у програмі на JavaScript. Для оголошення змінної можна використовувати ключові слова `var`, `let` або `const`. Ось деякі приклади:
 
 ```javascript
 var myVariable = 10;
-let myOtherVariable = "Hello, world!";
+let myOtherVariable = "Привіт, світ!";
 const myConstant = 3.14;
 ```
 
-JavaScript has several data types, including:
+JavaScript має кілька типів даних, включаючи:
 
-- `Number`: Represents numeric values, e.g., `10`, `3.14`.
-- `String`: Represents text, e.g., `"Hello, world!"`.
-- `Boolean`: Represents true or false values, e.g., `true`, `false`.
-- `Array`: Represents a collection of values, e.g., `[1, 2, 3]`.
-- `Object`: Represents a collection of key-value pairs, e.g., `{ name: "John", age: 30 }`.
+- `Number`: Представляє числові значення, наприклад, `10`, `3.14`.
+- `String`: Представляє текст, наприклад, `"Привіт, світ!"`.
+- `Boolean`: Представляє значення true або false, наприклад, `true`, `false`.
+- `Array`: Представляє колекцію значень, наприклад, `[1, 2, 3]`.
+- `Object`: Представляє колекцію пар ключ-значення, наприклад, `{ name: "John", age: 30 }`.
 
-## 4. Operators
+## 4. Оператори
 
-Operators are used to perform operations on variables and values. Here are some common operators in JavaScript:
+Оператори використовуються для виконання операцій над змінними та значеннями. Ось деякі загальні оператори в JavaScript:
 
-- Arithmetic operators: `+`, `-`, `*`, `/`, `%`
-- Comparison operators: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
-- Logical operators: `&&`, `||`, `!`
+- Арифметичні оператори: `+`, `-`, `*`, `/`, `%`
+- Оператори порівняння: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
+- Логічні оператори: `&&`, `||`, `!`
 
-## 5. Control Structures
+## 5. Структури управління
 
-Control structures are used to control the flow of a program. Here are some common control structures in JavaScript:
+Структури управління використовуються для управління потоком програми. Ось деякі загальні структури управління в JavaScript:
 
-- `if` statement: Used to execute a block of code if a condition is true.
-- `else` statement: Used to execute a block of code if the condition in the `if` statement is false.
-- `for` loop: Used to execute a block of code a specified number of times.
-- `while` loop: Used to execute a block of code as long as a condition is true.
+- `if` оператор: Використовується для виконання блоку коду, якщо умова є істинною.
+- `else` оператор: Використовується для виконання блоку коду, якщо умова в операторі `if` є хибною.
+- `for` цикл: Використовується для виконання блоку коду певну кількість разів.
+- `while` цикл: Використовується для виконання блоку коду, поки умова є істинною.
 
-## 6. Functions
+## 6. Функції
 
-Functions are reusable blocks of code that perform a specific task. To define a function in JavaScript, you can use the `function` keyword. Here is an example:
+Функції - це багаторазові блоки коду, які виконують певне завдання. Для визначення функції в JavaScript можна використовувати ключове слово `function`. Ось приклад:
 
 ```javascript
 function greet(name) {
-  return "Hello, " + name + "!";
+  return "Привіт, " + name + "!";
 }
 
-console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(greet("Аліса")); // Вивід: Привіт, Аліса!
 ```
 
-## 7. Conclusion
+## 7. Висновок
 
-In this lecture, we covered the basics of JavaScript, including its history, syntax, variables, data types, operators, control structures, and functions. These foundational concepts will help you get started with JavaScript programming and prepare you for more advanced topics in future lectures.
+У цій лекції ми розглянули основи JavaScript, включаючи його історію, синтаксис, змінні, типи даних, оператори, структури управління та функції. Ці основні концепції допоможуть вам розпочати програмування на JavaScript та підготують вас до більш складних тем у майбутніх лекціях.

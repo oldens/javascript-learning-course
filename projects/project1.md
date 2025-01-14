@@ -1,53 +1,53 @@
-# Project 1: Building a Simple JavaScript Application
+# Проект 1: Створення простої JavaScript програми
 
-Welcome to the first project of the JavaScript Learning Course! In this project, you will build a simple JavaScript application that allows users to perform basic arithmetic operations (addition, subtraction, multiplication, and division) on two numbers.
+Ласкаво просимо до першого проекту курсу вивчення JavaScript! У цьому проекті ви створите просту JavaScript програму, яка дозволяє користувачам виконувати базові арифметичні операції (додавання, віднімання, множення та ділення) над двома числами.
 
-## Project Requirements
+## Вимоги до проекту
 
-1. Create an HTML file with a form that allows users to input two numbers and select an arithmetic operation.
-2. Create a JavaScript file that handles the form submission, performs the selected arithmetic operation, and displays the result.
-3. Use appropriate HTML elements, such as input fields, buttons, and select dropdowns, to create the form.
-4. Use JavaScript to validate the user input and ensure that the input values are valid numbers.
-5. Display the result of the arithmetic operation on the web page.
+1. Створіть HTML файл з формою, яка дозволяє користувачам вводити два числа та вибирати арифметичну операцію.
+2. Створіть JavaScript файл, який обробляє відправку форми, виконує вибрану арифметичну операцію та відображає результат.
+3. Використовуйте відповідні HTML елементи, такі як поля введення, кнопки та випадаючі списки, для створення форми.
+4. Використовуйте JavaScript для перевірки введених користувачем даних та забезпечення того, що введені значення є дійсними числами.
+5. Відображайте результат арифметичної операції на веб-сторінці.
 
-## Example
+## Приклад
 
-Here is an example of what the HTML file might look like:
+Ось приклад того, як може виглядати HTML файл:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Arithmetic Application</title>
+  <title>Проста арифметична програма</title>
   <script src="app.js" defer></script>
 </head>
 <body>
-  <h1>Simple Arithmetic Application</h1>
+  <h1>Проста арифметична програма</h1>
   <form id="arithmetic-form">
-    <label for="number1">Number 1:</label>
+    <label for="number1">Число 1:</label>
     <input type="number" id="number1" name="number1" required>
     <br>
-    <label for="number2">Number 2:</label>
+    <label for="number2">Число 2:</label>
     <input type="number" id="number2" name="number2" required>
     <br>
-    <label for="operation">Operation:</label>
+    <label for="operation">Операція:</label>
     <select id="operation" name="operation" required>
-      <option value="add">Addition</option>
-      <option value="subtract">Subtraction</option>
-      <option value="multiply">Multiplication</option>
-      <option value="divide">Division</option>
+      <option value="add">Додавання</option>
+      <option value="subtract">Віднімання</option>
+      <option value="multiply">Множення</option>
+      <option value="divide">Ділення</option>
     </select>
     <br>
-    <button type="submit">Calculate</button>
+    <button type="submit">Обчислити</button>
   </form>
-  <h2>Result: <span id="result"></span></h2>
+  <h2>Результат: <span id="result"></span></h2>
 </body>
 </html>
 ```
 
-Here is an example of what the JavaScript file might look like:
+Ось приклад того, як може виглядати JavaScript файл:
 
 ```javascript
 document.addEventListener("DOMContentLoaded", function() {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const operation = document.getElementById("operation").value;
 
     if (isNaN(number1) || isNaN(number2)) {
-      resultSpan.textContent = "Please enter valid numbers.";
+      resultSpan.textContent = "Будь ласка, введіть дійсні числа.";
       return;
     }
 
@@ -79,13 +79,13 @@ document.addEventListener("DOMContentLoaded", function() {
         break;
       case "divide":
         if (number2 === 0) {
-          resultSpan.textContent = "Cannot divide by zero.";
+          resultSpan.textContent = "Не можна ділити на нуль.";
           return;
         }
         result = number1 / number2;
         break;
       default:
-        resultSpan.textContent = "Invalid operation.";
+        resultSpan.textContent = "Невірна операція.";
         return;
     }
 
@@ -94,6 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-## Conclusion
+## Висновок
 
-In this project, you built a simple JavaScript application that allows users to perform basic arithmetic operations on two numbers. You learned how to create an HTML form, handle form submissions with JavaScript, validate user input, and display the result on the web page. This project helps you apply your knowledge of JavaScript and HTML to create a functional web application.
+У цьому проекті ви створили просту JavaScript програму, яка дозволяє користувачам виконувати базові арифметичні операції над двома числами. Ви дізналися, як створити HTML форму, обробляти відправку форми за допомогою JavaScript, перевіряти введені користувачем дані та відображати результат на веб-сторінці. Цей проект допоможе вам застосувати свої знання JavaScript та HTML для створення функціонального веб-додатку.
