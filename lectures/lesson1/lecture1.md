@@ -74,3 +74,25 @@ console.log(greet("Аліса")); // Вивід: Привіт, Аліса!
 ## 7. Висновок
 
 У цій лекції ми розглянули основи JavaScript, включаючи його історію, синтаксис, змінні, типи даних, оператори, структури управління та функції. Ці основні концепції допоможуть вам розпочати програмування на JavaScript та підготують вас до більш складних тем у майбутніх лекціях.
+
+## Додаткове завдання
+
+Додайте кнопку з id `myFirstButtonId` до HTML прикладу та оновіть інструкції, щоб згадати про подію кліку на цій кнопці.
+
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основи JavaScript</title>
+  <script src="lecture1.js" defer></script>
+</head>
+<body>
+  <h1>Основи JavaScript</h1>
+  <button id="myFirstButtonId">Натисніть мене</button>
+</body>
+</html>
+```
+
+Код JavaScript для обробки події кліку на кнопці буде додано у файлі `lecture1.js`.
