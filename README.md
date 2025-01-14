@@ -10,6 +10,7 @@ Welcome to the JavaScript Learning Course! This course is designed to help stude
 2. [Exercises](#exercises)
    - [Exercise 1: JavaScript Variables](exercises/exercise1.md)
    - [Exercise 2: JavaScript Loops](exercises/exercise2.md)
+   - [Homework 1: JavaScript Basics Homework](exercises/homework1.md)
 3. [Projects](#projects)
    - [Project 1: Building a Simple JavaScript Application](projects/project1.md)
 
@@ -26,6 +27,7 @@ The exercises are designed to help you practice and reinforce the concepts you l
 
 - [Exercise 1: JavaScript Variables](exercises/exercise1.md)
 - [Exercise 2: JavaScript Loops](exercises/exercise2.md)
+- [Homework 1: JavaScript Basics Homework](exercises/homework1.md)
 
 ## Projects
 
