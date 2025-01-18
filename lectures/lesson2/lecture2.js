@@ -112,3 +112,47 @@ function перевіритиВік(вік) {
 }
 
 console.log(перевіритиВік(20)); // "Ви повнолітні"
+
+// Add event listener for form submission to trigger age analysis
+document.getElementById("ageSubmit").onclick = function(e) {
+    e.preventDefault();
+
+    const age = parseInt(document.getElementById("age").value);
+    if (isNaN(age) || age < 0) {
+        alert("Please enter a valid age.");
+        return;
+    }
+
+    const wishes = [
+        "Have a fantastic day!",
+        "Keep chasing your dreams!",
+        "You are doing great!",
+        "The best is yet to come!",
+        "Stay curious and keep learning!"
+    ];
+
+    let message = "";
+
+    if (age < 18) {
+        message = `You're a minor. Enjoy your youth! ${randomWish()}`;
+    } else if (age < 65) {
+        message = `You're an adult. Make the most of your time! ${randomWish()}`;
+    } else {
+        message = `You're a senior. Share your wisdom with the world! ${randomWish()}`;
+    }
+
+    document.getElementById("resultText").textContent = message;
+    document.getElementById("result").style.display = "block";
+};
+
+// Function to display a result with a random wish based on age categories
+function randomWish() {
+    const wishes = [
+        "Have a fantastic day!",
+        "Keep chasing your dreams!",
+        "You are doing great!",
+        "The best is yet to come!",
+        "Stay curious and keep learning!"
+    ];
+    return wishes[Math.floor(Math.random() * wishes.length)];
+}
