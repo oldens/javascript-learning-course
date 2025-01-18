@@ -10,7 +10,8 @@
 4. Скорочені оператори
 5. Робота з рядками
 6. Логічні оператори та умовні конструкції
-7. Висновок
+7. Визначення віку та побажання
+8. Висновок
 
 ## 1. Базова математика
 
@@ -229,6 +230,105 @@ function перевіритиВік(вік) {
 console.log(перевіритиВік(20)); // "Ви повнолітні"
 ```
 
-## 7. Висновок
+## 7. Визначення віку та побажання
+
+### Інструкції для створення форми та додавання обробника подій
+
+1. Створіть HTML файл з наступним вмістом:
+
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визначення віку та побажання</title>
+</head>
+<body>
+    <h1>Визначення віку та побажання</h1>
+    <form id="ageForm">
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+        <button type="submit" id="ageSubmit">Check</button>
+    </form>
+
+    <div id="result" style="display: none;">
+        <h2>Result</h2>
+        <p id="resultText"></p>
+    </div>
+
+    <script src="lecture2.js"></script>
+</body>
+</html>
+```
+
+2. Додайте JavaScript код у файл `lecture2.js` для обробки відправки форми, аналізу віку та відображення результату з випадковим побажанням.
+
+```javascript
+document.getElementById("ageSubmit").onclick = function(e) {
+    e.preventDefault();
+
+    const age = parseInt(document.getElementById("age").value);
+    if (isNaN(age) || age < 0) {
+        alert("Please enter a valid age.");
+        return;
+    }
+
+    const wishes = [
+        "Have a fantastic day!",
+        "Keep chasing your dreams!",
+        "You are doing great!",
+        "The best is yet to come!",
+        "Stay curious and keep learning!"
+    ];
+
+    let message = "";
+
+    if (age < 18) {
+        message = `You're a minor. Enjoy your youth! ${randomWish()}`;
+    } else if (age < 65) {
+        message = `You're an adult. Make the most of your time! ${randomWish()}`;
+    } else {
+        message = `You're a senior. Share your wisdom with the world! ${randomWish()}`;
+    }
+
+    document.getElementById("resultText").textContent = message;
+    document.getElementById("result").style.display = "block";
+};
+
+function randomWish() {
+    const wishes = [
+        "Have a fantastic day!",
+        "Keep chasing your dreams!",
+        "You are doing great!",
+        "The best is yet to come!",
+        "Stay curious and keep learning!"
+    ];
+    return wishes[Math.floor(Math.random() * wishes.length)];
+}
+```
+
+### Пояснення логіки аналізу віку та випадкового побажання
+
+1. Учень вводить свій вік у форму.
+2. JavaScript перевіряє вік і відображає результат залежно від вікової категорії:
+   - До 18 років — “Молодий”.
+   - 18-64 роки — “Дорослий”.
+   - 65+ років — “Старший”.
+3. Додається випадкове побажання зі списку.
+
+### Приклад роботи форми та очікуваний результат
+
+#### Вхід
+
+Учень вводить вік: 25.
+
+#### Вихід
+
+“You’re an adult. Make the most of your time! Stay curious and keep learning!”
+
+Ця вправа проста у виконанні, але включає інтерактивність і трохи гумору, що робить процес навчання цікавішим.
+
+## 8. Висновок
 
 У цій лекції ми розглянули базову математику, десяткові числа, залишок від ділення, скорочені оператори, роботу з рядками, логічні оператори та умовні конструкції. Ці основні концепції допоможуть вам розпочати програмування на JavaScript та підготують вас до більш складних тем у майбутніх лекціях.
