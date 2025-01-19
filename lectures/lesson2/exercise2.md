@@ -1,6 +1,6 @@
-# Вправа 2: Визначення віку та побажання
+# Вправа 2: Гра "Вгадати число"
 
-Ласкаво просимо до другої вправи курсу вивчення JavaScript! У цій вправі ви будете створювати форму, яка бере вік користувача, аналізує його і залежно від віку додає випадкове побажання.
+Ласкаво просимо до другої вправи курсу вивчення JavaScript! У цій вправі ви будете створювати гру "Вгадати число", яка генерує випадкове число, приймає здогадки користувача і надає підказки.
 
 ## Інструкції
 
@@ -12,14 +12,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Визначення віку та побажання</title>
+    <title>Guess the Number</title>
 </head>
 <body>
-    <h1>Визначення віку та побажання</h1>
-    <form id="ageForm">
-        <label for="age">Enter your age:</label>
-        <input type="number" id="age" name="age" placeholder="Enter your age" required>
-        <button type="submit" id="ageSubmit">Check</button>
+    <h1>Guess the Number</h1>
+    <p>Try to guess the number I'm thinking of between 1 and 100!</p>
+
+    <form id="guessForm">
+        <label for="guess">Your Guess:</label>
+        <input type="number" id="guess" name="guess" placeholder="Enter your guess" min="1" max="100" required>
+        <button type="submit">Submit</button>
     </form>
 
     <div id="result" style="display: none;">
@@ -27,81 +29,89 @@
         <p id="resultText"></p>
     </div>
 
+    <button id="resetGame" style="display: none;">Play Again</button>
+
     <script src="lecture2.js"></script>
 </body>
 </html>
 ```
 
-2. Додайте JavaScript код у файл `lecture2.js` для обробки відправки форми, аналізу віку та відображення результату з випадковим побажанням.
+2. Додайте JavaScript код у файл `lecture2.js` для обробки відправки форми, перевірки здогадок і відображення результату.
 
 ```javascript
-document.getElementById("ageSubmit").onclick = function(e) {
+// Generate a random number between 1 and 100
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 0; // To count the number of attempts
+
+document.getElementById("guessForm").onsubmit = function (e) {
     e.preventDefault();
 
-    const age = parseInt(document.getElementById("age").value);
-    if (isNaN(age) || age < 0) {
-        alert("Please enter a valid age.");
+    // Get the user's guess
+    const guess = parseInt(document.getElementById("guess").value);
+    attempts++;
+
+    // Validate the input
+    if (isNaN(guess) || guess < 1 || guess > 100) {
+        alert("Please enter a valid number between 1 and 100.");
         return;
     }
 
-    const wishes = [
-        "Have a fantastic day!",
-        "Keep chasing your dreams!",
-        "You are doing great!",
-        "The best is yet to come!",
-        "Stay curious and keep learning!"
-    ];
-
+    // Check the guess and display the result
     let message = "";
-
-    if (age < 18) {
-        message = `You're a minor. Enjoy your youth! ${randomWish()}`;
-    } else if (age < 65) {
-        message = `You're an adult. Make the most of your time! ${randomWish()}`;
+    if (guess < randomNumber) {
+        message = `Too low! Try again. Attempts: ${attempts}`;
+    } else if (guess > randomNumber) {
+        message = `Too high! Try again. Attempts: ${attempts}`;
     } else {
-        message = `You're a senior. Share your wisdom with the world! ${randomWish()}`;
+        message = `🎉 Congratulations! You guessed it in ${attempts} attempts!`;
+        document.getElementById("resetGame").style.display = "inline";
     }
 
+    // Update the result section
     document.getElementById("resultText").textContent = message;
     document.getElementById("result").style.display = "block";
+
+    // Check for maximum attempts
+    if (attempts >= 10 && guess !== randomNumber) {
+        document.getElementById("resultText").textContent = "Game over! You've used all your attempts.";
+        document.getElementById("result").style.display = "block";
+        document.getElementById("guessForm").style.display = "none";
+        document.getElementById("resetGame").style.display = "inline";
+    }
 };
 
-function randomWish() {
-    const wishes = [
-        "Have a fantastic day!",
-        "Keep chasing your dreams!",
-        "You are doing great!",
-        "The best is yet to come!",
-        "Stay curious and keep learning!"
-    ];
-    return wishes[Math.floor(Math.random() * wishes.length)];
-}
+document.getElementById("resetGame").onclick = function () {
+    location.reload();
+};
 ```
 
 ## Як це працює
 
-1. Учень вводить свій вік у форму.
-2. JavaScript перевіряє вік і відображає результат залежно від вікової категорії:
-   - До 18 років — “Молодий”.
-   - 18-64 роки — “Дорослий”.
-   - 65+ років — “Старший”.
-3. Додається випадкове побажання зі списку.
+1. Гра генерує випадкове число: Це число буде незмінним, поки учень не вгадає його.
+2. Учень вводить свої здогадки у форму: Поле обмежене числом від 1 до 100.
+3. Підказки та результат:
+   - Якщо число занадто велике: “Too high!”
+   - Якщо число занадто маленьке: “Too low!”
+   - Якщо вгадали: “Congratulations! You guessed it in X attempts!”
+4. Рахунок спроб: Учні бачать, скільки разів вони намагалися вгадати.
+5. Обмеження за кількістю спроб: Учні мають максимум 10 спроб.
+6. Кнопка “Почати заново”: Дозволяє перезапустити гру.
 
 ## Як завдання виконується на уроці
 
 - Учні створюють форму та додають обробник подій.
 - Вчаться працювати з умовними конструкціями (if-else).
-- Використовують функцію для вибору випадкового побажання.
+- Використовують функцію для генерації випадкового числа.
 - Відразу бачать результат у браузері.
 
 ## Приклад
 
 ### Вхід
 
-Учень вводить вік: 25.
+Учень вводить здогадку: 50.
 
 ### Вихід
 
-“You’re an adult. Make the most of your time! Stay curious and keep learning!”
+“Too low! Try again. Attempts: 1”
 
-Ця вправа проста у виконанні, але включає інтерактивність і трохи гумору, що робить процес навчання цікавішим.
+Ця вправа проста у виконанні, але включає інтерактивність і трохи азарту, що робить процес навчання цікавішим.
