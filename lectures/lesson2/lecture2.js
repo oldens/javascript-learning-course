@@ -1,158 +1,46 @@
-console.log("Лекція 2: Математика, Рядки та Логічні Оператори в JavaScript");
+console.log("Лекція 2: Гра 'Вгадати число'");
 
-// БАЗОВА МАТЕМАТИКА
-let a = 10;
-let b = 5;
+// Generate a random number between 1 and 100
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 0; // To count the number of attempts
 
-let додавання = a + b; // 15
-let віднімання = a - b; // 5
-let множення = a * b; // 50
-let ділення = a / b; // 2
-
-let x = 5;
-x++; // 6
-x--; // 5
-
-// ДЕСЯТКОВІ ЧИСЛА
-let десяткове1 = 0.1;
-let десяткове2 = 0.2;
-let результат = десяткове1 + десяткове2; // 0.30000000000000004
-
-let множенняДесяткових = 0.1 * 0.2; // 0.020000000000000004
-let діленняДесяткових = 0.3 / 0.1; // 3
-
-// ЗАЛИШОК ВІД ДІЛЕННЯ
-let залишок = 10 % 3; // 1
-
-// СКОРОЧЕНІ ОПЕРАТОРИ
-let y = 10;
-y += 5; // 15
-y -= 3; // 12
-y *= 2; // 24
-y /= 4; // 6
-
-// РОБОТА З РЯДКАМИ
-let привітання = "Привіт";
-let ім'я = "Світ";
-let повнеПривітання = привітання + ", " + ім'я + "!"; // "Привіт, Світ!"
-
-let символ = повнеПривітання[0]; // "П"
-
-// ЕКРАНУВАННЯ СИМВОЛІВ У РЯДКАХ
-let рядок = "Це \"цитата\" у рядку.";
-
-// МЕТОДИ РОБОТИ З РЯДКАМИ
-let довжинаРядка = повнеПривітання.length; // 12
-let новийРядок = повнеПривітання.replace("Світ", "JavaScript"); // "Привіт, JavaScript!"
-
-// ЛОГІЧНІ ОПЕРАТОРИ ТА УМОВНІ КОНСТРУКЦІЇ
-let вік = 18;
-
-if (вік >= 18) {
-  console.log("Ви повнолітні.");
-} else {
-  console.log("Ви неповнолітні.");
-}
-
-let число = 5;
-let рядокЧисло = "5";
-
-console.log(число == рядокЧисло); // true
-console.log(число === рядокЧисло); // false
-
-let a = true;
-let b = false;
-
-console.log(a && b); // false
-console.log(a || b); // true
-
-let вік = 18;
-let статус = (вік >= 18) ? "повнолітній" : "неповнолітній";
-console.log(статус); // "повнолітній"
-
-let деньТижня = 3;
-let назваДня;
-
-switch (деньТижня) {
-  case 1:
-    назваДня = "Понеділок";
-    break;
-  case 2:
-    назваДня = "Вівторок";
-    break;
-  case 3:
-    назваДня = "Середа";
-    break;
-  case 4:
-    назваДня = "Четвер";
-    break;
-  case 5:
-    назваДня = "П'ятниця";
-    break;
-  case 6:
-    назваДня = "Субота";
-    break;
-  case 7:
-    назваДня = "Неділя";
-    break;
-  default:
-    назваДня = "Невідомий день";
-}
-
-console.log(назваДня); // "Середа"
-
-function перевіритиВік(вік) {
-  if (вік < 0) {
-    return "Невірний вік";
-  }
-  if (вік < 18) {
-    return "Ви неповнолітні";
-  }
-  return "Ви повнолітні";
-}
-
-console.log(перевіритиВік(20)); // "Ви повнолітні"
-
-// Add event listener for form submission to trigger age analysis
-document.getElementById("ageSubmit").onclick = function(e) {
+document.getElementById("guessForm").onsubmit = function (e) {
     e.preventDefault();
 
-    const age = parseInt(document.getElementById("age").value);
-    if (isNaN(age) || age < 0) {
-        alert("Please enter a valid age.");
+    // Get the user's guess
+    const guess = parseInt(document.getElementById("guess").value);
+    attempts++;
+
+    // Validate the input
+    if (isNaN(guess) || guess < 1 || guess > 100) {
+        alert("Please enter a valid number between 1 and 100.");
         return;
     }
 
-    const wishes = [
-        "Have a fantastic day!",
-        "Keep chasing your dreams!",
-        "You are doing great!",
-        "The best is yet to come!",
-        "Stay curious and keep learning!"
-    ];
-
+    // Check the guess and display the result
     let message = "";
-
-    if (age < 18) {
-        message = `You're a minor. Enjoy your youth! ${randomWish()}`;
-    } else if (age < 65) {
-        message = `You're an adult. Make the most of your time! ${randomWish()}`;
+    if (guess < randomNumber) {
+        message = `Too low! Try again. Attempts: ${attempts}`;
+    } else if (guess > randomNumber) {
+        message = `Too high! Try again. Attempts: ${attempts}`;
     } else {
-        message = `You're a senior. Share your wisdom with the world! ${randomWish()}`;
+        message = `🎉 Congratulations! You guessed it in ${attempts} attempts!`;
+        document.getElementById("resetGame").style.display = "inline";
     }
 
+    // Update the result section
     document.getElementById("resultText").textContent = message;
     document.getElementById("result").style.display = "block";
+
+    // Check for maximum attempts
+    if (attempts >= 10 && guess !== randomNumber) {
+        document.getElementById("resultText").textContent = "Game over! You've used all your attempts.";
+        document.getElementById("result").style.display = "block";
+        document.getElementById("guessForm").style.display = "none";
+        document.getElementById("resetGame").style.display = "inline";
+    }
 };
 
-// Function to display a result with a random wish based on age categories
-function randomWish() {
-    const wishes = [
-        "Have a fantastic day!",
-        "Keep chasing your dreams!",
-        "You are doing great!",
-        "The best is yet to come!",
-        "Stay curious and keep learning!"
-    ];
-    return wishes[Math.floor(Math.random() * wishes.length)];
-}
+document.getElementById("resetGame").onclick = function () {
+    location.reload();
+};
