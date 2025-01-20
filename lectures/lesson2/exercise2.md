@@ -1,11 +1,39 @@
-# Вправа 2: Гра "Вгадати число"
+# Завдання: Гра "Вгадати число"
 
-Ласкаво просимо до другої вправи курсу вивчення JavaScript! У цій вправі ви будете створювати гру "Вгадати число", яка генерує випадкове число, приймає здогадки користувача і надає підказки.
+## Мета гри
+Вгадати випадкове число від 1 до 100 за якомога меншу кількість спроб.
 
-## Інструкції
+## Завдання
 
-1. Створіть HTML файл з наступним вмістом:
+1. **HTML**:
+   - Створіть форму для введення числа.
+   - Додайте секцію для відображення результату.
+   - Додайте кнопку для перезапуску гри.
 
+2. **JavaScript**:
+   - Згенеруйте випадкове число.
+   - Реалізуйте логіку обробки введення користувача:
+     - Виведіть підказки: "Занадто мало", "Занадто багато", або "Вгадали!".
+     - Відображайте кількість спроб.
+   - Додайте обмеження на кількість спроб (максимум 10).
+   - У випадку невдачі виведіть повідомлення "Гру закінчено".
+
+3. **Розширення**:
+   - Реалізуйте кнопку "Почати заново" для перезапуску гри.
+   - Додайте систему балів:
+     - Нараховуйте більше балів за меншу кількість спроб.
+   - Використовуйте стилізацію для результатів:
+     - Зеленим кольором відображайте успіх.
+     - Червоним кольором відображайте помилки.
+
+## Навички
+- Робота з формами.
+- Обробка подій.
+- Використання умовних конструкцій та циклів у JavaScript.
+
+## Код прикладу
+
+### HTML
 ```html
 <!DOCTYPE html>
 <html lang="uk">
@@ -31,32 +59,26 @@
 
     <button id="resetGame" style="display: none;">Play Again</button>
 
-    <script src="lecture2.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
-```
 
-2. Додайте JavaScript код у файл `lecture2.js` для обробки відправки форми, перевірки здогадок і відображення результату.
+JavaScript
 
-```javascript
 // Generate a random number between 1 and 100
 const randomNumber = Math.floor(Math.random() * 100) + 1;
-let attempts = 0; // To count the number of attempts
+let attempts = 0;
 
 document.getElementById("guessForm").onsubmit = function (e) {
     e.preventDefault();
-
-    // Get the user's guess
     const guess = parseInt(document.getElementById("guess").value);
     attempts++;
 
-    // Validate the input
     if (isNaN(guess) || guess < 1 || guess > 100) {
         alert("Please enter a valid number between 1 and 100.");
         return;
     }
 
-    // Check the guess and display the result
     let message = "";
     if (guess < randomNumber) {
         message = `Too low! Try again. Attempts: ${attempts}`;
@@ -67,11 +89,9 @@ document.getElementById("guessForm").onsubmit = function (e) {
         document.getElementById("resetGame").style.display = "inline";
     }
 
-    // Update the result section
     document.getElementById("resultText").textContent = message;
     document.getElementById("result").style.display = "block";
 
-    // Check for maximum attempts
     if (attempts >= 10 && guess !== randomNumber) {
         document.getElementById("resultText").textContent = "Game over! You've used all your attempts.";
         document.getElementById("result").style.display = "block";
@@ -83,35 +103,4 @@ document.getElementById("guessForm").onsubmit = function (e) {
 document.getElementById("resetGame").onclick = function () {
     location.reload();
 };
-```
 
-## Як це працює
-
-1. Гра генерує випадкове число: Це число буде незмінним, поки учень не вгадає його.
-2. Учень вводить свої здогадки у форму: Поле обмежене числом від 1 до 100.
-3. Підказки та результат:
-   - Якщо число занадто велике: “Too high!”
-   - Якщо число занадто маленьке: “Too low!”
-   - Якщо вгадали: “Congratulations! You guessed it in X attempts!”
-4. Рахунок спроб: Учні бачать, скільки разів вони намагалися вгадати.
-5. Обмеження за кількістю спроб: Учні мають максимум 10 спроб.
-6. Кнопка “Почати заново”: Дозволяє перезапустити гру.
-
-## Як завдання виконується на уроці
-
-- Учні створюють форму та додають обробник подій.
-- Вчаться працювати з умовними конструкціями (if-else).
-- Використовують функцію для генерації випадкового числа.
-- Відразу бачать результат у браузері.
-
-## Приклад
-
-### Вхід
-
-Учень вводить здогадку: 50.
-
-### Вихід
-
-“Too low! Try again. Attempts: 1”
-
-Ця вправа проста у виконанні, але включає інтерактивність і трохи азарту, що робить процес навчання цікавішим.
