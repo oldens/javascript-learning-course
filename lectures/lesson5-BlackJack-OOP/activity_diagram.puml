@@ -1,0 +1,50 @@
+@startuml
+|User|
+start
+    :Game starts;
+
+|Game|
+repeat
+    :Ask User to decide action (Hit or Stand)?;
+    if (User chooses Hit?) then (yes)
+        |Player|
+        :Draw a card;
+        :Calculate Player score;
+        |Game|
+        
+        if (Player score > 21?) then (yes)
+            :Player Busts;
+            stop
+        endif
+    else (no)
+        |Player|
+        :Player Stands;
+    endif
+    |Game|
+repeat while (User chooses Hit?)
+
+|Dealer|
+repeat
+    :Dealer draws a card;
+    :Calculate Dealer score;
+    |Game|
+repeat while (Dealer total < 17?)
+
+|Game|
+if (Dealer score > 21?) then (yes)
+    :Player wins (Dealer Busts);
+    stop
+endif
+
+:Compare Player and Dealer scores;
+if (Player score > Dealer score?) then (yes)
+    :Player wins;
+else
+    if (Player score < Dealer score?) then (yes)
+        :Dealer wins;
+    else
+        :Game is a tie (Push);
+    endif
+endif
+stop
+@enduml

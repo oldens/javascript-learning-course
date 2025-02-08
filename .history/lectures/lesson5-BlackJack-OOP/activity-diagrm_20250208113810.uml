@@ -1,0 +1,39 @@
+@startuml
+|Player|
+start
+:Place bet;
+:Receive initial cards;
+repeat
+  :Decide action;
+  if (Hit?) then (yes)
+    :Draw a card;
+  endif
+repeat while (Player wants to hit?)
+
+if (Bust?) then (yes)
+  :Player loses;
+  stop
+else (no)
+  |Dealer|
+  :Reveal hidden card;
+  repeat
+    if (Dealer total < 17?) then (yes)
+      :Dealer draws a card;
+    endif
+  repeat while (Dealer total < 17?)
+
+  if (Dealer busts?) then (yes)
+    :Player wins;
+    stop
+  else
+    |Game|
+    :Compare totals;
+    if (Player total > Dealer total?) then (yes)
+      :Player wins;
+    else
+      :Dealer wins;
+    endif
+    stop
+  endif
+endif
+@enduml
