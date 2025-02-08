@@ -1,0 +1,47 @@
+@startuml
+participant User
+participant Game
+participant Player
+participant Dealer
+
+User -> Game: Start game
+Game -> User: Ask to decide (Hit or Stand)
+
+loop While User chooses Hit
+    User -> Game: Hit
+    Game -> Player: Draw a card
+    Player -> Player: Calculate Player score
+    Player -> Game: Return Player score
+    Game -> Game: Check if Player busts
+    alt Player Busts
+        Game -> User: Player loses
+        stop
+    end
+    Game -> User: Ask again (Hit or Stand)
+end
+
+User -> Game: Stand
+Game -> Player: Player stands
+
+loop While Dealer score < 17
+    Game -> Dealer: Draw a card
+    Dealer -> Dealer: Calculate Dealer score
+    Dealer -> Game: Return Dealer score
+end
+
+alt Dealer Busts
+    Game -> User: Player wins
+    stop
+else
+    Game -> Game: Compare Player and Dealer scores
+    alt Player wins
+        Game -> User: Player wins
+    else Dealer wins
+        Game -> User: Dealer wins
+    else Tie
+        Game -> User: Game is a tie (Push)
+    end
+end
+
+stop
+@enduml
