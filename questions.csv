@@ -108,85 +108,28 @@
 Який метод використовується для пошуку індексу першого елемента, що задовольняє умову?,Array.prototype.findIndex,Array.prototype.find,Array.prototype.filter,Array.prototype.map 
 Який метод використовується для перевірки, чи кожен елемент масиву задовольняє умову?,Array.prototype.every,Array.prototype.some,Array.prototype.find,Array.prototype.filter 
 Який метод використовується для перевірки, чи хоча б один елемент масиву задовольняє умову?,Array.prototype.some,Array.prototype.every,Array.prototype.find,Array.prototype.filter 
-Який метод використовується для створення нового масиву з результатами виклику функції для кожного елемента масиву?,map,filter,reduce,forEach
-Який метод використовується для створення нового масиву з усіма елементами, які пройшли перевірку, задану у функції?,filter,map,reduce,forEach
-Який метод використовується для зведення масиву до одного значення?,reduce,map,filter,forEach
-Який цикл використовується для виконання коду доти, доки задана умова залишається істинною?,while,for,do...while,for...of
-Який цикл використовується для виконання коду хоча б один раз, незалежно від умови?,do...while,while,for,for...of
-Який цикл використовується для ітерації по елементах масивів або інших ітеративних об’єктів?,for...of,for,while,do...while
-Який цикл використовується для ітерації по ключах об’єкта?,for...in,for,while,do...while
-Який оператор використовується для перевірки рівності значень?,==,===,!=,!== 
-Який оператор використовується для перевірки рівності значень і типів?,===,==,!=,!== 
-Який оператор використовується для перевірки нерівності значень?,!=,==,===,!== 
-Який оператор використовується для перевірки нерівності значень і типів?,!==,==,===,!= 
-Який оператор використовується для об'єднання кількох умов, де всі умови повинні бути істинними?,&&,||,!,?? 
-Який оператор використовується для об'єднання кількох умов, де хоча б одна умова повинна бути істинною?,||,&&,!,?? 
-Який оператор використовується для перевірки, чи значення є істинним?,!,&&,||,?? 
-Який оператор використовується для перевірки, чи значення є хибним?,!,&&,||,?? 
-Який оператор використовується для скорочення умовної конструкції if-else до одного рядка,? :,if,else,switch 
-Який оператор використовується для перевірки однієї змінної на відповідність кільком можливим значенням?,switch,if,else,? : 
-Який метод використовується для додавання слухача подій до елемента?,addEventListener,attachEvent,on,bind 
-Який метод використовується для видалення слухача подій з елемента?,removeEventListener,detachEvent,off,unbind 
-Який метод використовується для створення нового елемента?,createElement,appendChild,removeChild,insertBefore 
-Який метод використовується для додавання нового елемента як дочірнього до існуючого?,appendChild,createElement,removeChild,insertBefore 
-Який метод використовується для видалення елемента зі сторінки?,removeChild,createElement,appendChild,insertBefore 
-Який метод використовується для вставки нового елемента перед іншим елементом?,insertBefore,createElement,appendChild,removeChild 
-Який метод використовується для отримання значення атрибута?,getAttribute,setAttribute,removeAttribute,hasAttribute 
-Який метод використовується для встановлення значення атрибута?,setAttribute,getAttribute,removeAttribute,hasAttribute 
-Який метод використовується для видалення атрибута?,removeAttribute,getAttribute,setAttribute,hasAttribute 
-Який метод використовується для перевірки наявності атрибута?,hasAttribute,getAttribute,setAttribute,removeAttribute 
-Який метод використовується для зміни інлайн-стилів елемента?,style,classList,setAttribute,getAttribute 
-Який метод використовується для додавання класу до елемента?,classList.add,classList.remove,classList.toggle,classList.contains 
-Який метод використовується для видалення класу з елемента?,classList.remove,classList.add,classList.toggle,classList.contains 
-Який метод використовується для перемикання класу на елементі?,classList.toggle,classList.add,classList.remove,classList.contains 
-Який метод використовується для перевірки наявності класу на елементі?,classList.contains,classList.add,classList.remove,classList.toggle 
-Який метод використовується для отримання значення елемента форми?,value,textContent,innerHTML,getAttribute 
-Який метод використовується для зміни значення елемента форми?,value,textContent,innerHTML,setAttribute 
-Який метод використовується для обробки даних, введених у форми?,submit,reset,validate,process 
-Який метод використовується для отримання батьківського елемента?,parentNode,childNodes,nextSibling,previousSibling 
-Який метод використовується для отримання дочірніх вузлів?,childNodes,parentNode,nextSibling,previousSibling 
-Який метод використовується для отримання сусіднього вузла?,nextSibling,parentNode,childNodes,previousSibling 
-Який метод використовується для отримання попереднього вузла?,previousSibling,parentNode,childNodes,nextSibling 
-Який метод використовується для створення нового об’єкта?,Object.create,Object.assign,Object.defineProperty,Object.freeze 
-Який метод використовується для копіювання властивостей з одного об’єкта в інший?,Object.assign,Object.create,Object.defineProperty,Object.freeze 
-Який метод використовується для визначення властивості об’єкта?,Object.defineProperty,Object.create,Object.assign,Object.freeze 
-Який метод використовується для заморожування об’єкта?,Object.freeze,Object.create,Object.assign,Object.defineProperty 
-Який метод використовується для перевірки наявності властивості в об’єкті?,hasOwnProperty,propertyIsEnumerable,isPrototypeOf,toString 
-Який метод використовується для перевірки, чи властивість є власною властивістю об’єкта?,hasOwnProperty,propertyIsEnumerable,isPrototypeOf,toString 
-Який метод використовується для перевірки, чи властивість є перелічуваною?,propertyIsEnumerable,hasOwnProperty,isPrototypeOf,toString 
-Який метод використовується для перевірки, чи об’єкт є прототипом іншого об’єкта?,isPrototypeOf,hasOwnProperty,propertyIsEnumerable,toString 
-Який метод використовується для перетворення об’єкта в рядок?,toString,valueOf,toLocaleString,toJSON 
-Який метод використовується для перетворення об’єкта в JSON-рядок?,JSON.stringify,JSON.parse,toString,valueOf 
-Який метод використовується для перетворення JSON-рядка в об’єкт?,JSON.parse,JSON.stringify,toString,valueOf 
-Який метод використовується для створення нового екземпляра класу?,new,create,define,construct 
-Який метод використовується для виклику методу батьківського класу?,super,this,parent,base 
-Який метод використовується для перевизначення методу в дочірньому класі?,override,super,this,parent 
-Який метод використовується для створення статичного методу в класі?,static,class,method,function 
-Який метод використовується для створення приватного поля в класі?,#,private,_,__ 
-Який метод використовується для створення гетера в класі?,get,set,define,create 
-Який метод використовується для створення сетера в класі?,set,get,define,create 
-Який метод використовується для створення нового масиву?,Array.from,Array.of,Array.isArray,Array.prototype 
-Який метод використовується для перевірки, чи є значення масивом?,Array.isArray,Array.from,Array.of,Array.prototype 
-Який метод використовується для створення масиву з аргументів функції?,Array.from,Array.of,Array.isArray,Array.prototype 
-Який метод використовується для створення масиву з елементів?,Array.of,Array.from,Array.isArray,Array.prototype 
-Який метод використовується для додавання елементів до масиву?,Array.prototype.push,Array.prototype.pop,Array.prototype.shift,Array.prototype.unshift 
-Який метод використовується для видалення елементів з масиву?,Array.prototype.pop,Array.prototype.push,Array.prototype.shift,Array.prototype.unshift 
-Який метод використовується для видалення першого елемента з масиву?,Array.prototype.shift,Array.prototype.pop,Array.prototype.push,Array.prototype.unshift 
-Який метод використовується для додавання елементів на початок масиву?,Array.prototype.unshift,Array.prototype.push,Array.prototype.pop,Array.prototype.shift 
-Який метод використовується для створення нового масиву з результатами виклику функції для кожного елемента масиву?,Array.prototype.map,Array.prototype.filter,Array.prototype.reduce,Array.prototype.forEach 
-Який метод використовується для створення нового масиву з усіма елементами, які пройшли перевірку, задану у функції?,Array.prototype.filter,Array.prototype.map,Array.prototype.reduce,Array.prototype.forEach 
-Який метод використовується для зведення масиву до одного значення?,Array.prototype.reduce,Array.prototype.map,Array.prototype.filter,Array.prototype.forEach 
-Який метод використовується для виконання функції для кожного елемента масиву?,Array.prototype.forEach,Array.prototype.map,Array.prototype.filter,Array.prototype.reduce 
-Який метод використовується для сортування елементів масиву?,Array.prototype.sort,Array.prototype.reverse,Array.prototype.slice,Array.prototype.splice 
-Який метод використовується для зворотного порядку елементів масиву?,Array.prototype.reverse,Array.prototype.sort,Array.prototype.slice,Array.prototype.splice 
-Який метод використовується для створення нового масиву з частини існуючого масиву?,Array.prototype.slice,Array.prototype.splice,Array.prototype.sort,Array.prototype.reverse 
-Який метод використовується для видалення або заміни існуючих елементів масиву?,Array.prototype.splice,Array.prototype.slice,Array.prototype.sort,Array.prototype.reverse 
-Який метод використовується для об'єднання двох або більше масивів?,concat,Array.prototype.join,Array.prototype.push,Array.prototype.pop 
-Який метод використовується для перетворення масиву в рядок?,Array.prototype.join,concat,Array.prototype.push,Array.prototype.pop 
-Який метод використовується для перевірки, чи містить масив певний елемент?,Array.prototype.includes,Array.prototype.indexOf,Array.prototype.find,Array.prototype.filter 
-Який метод використовується для пошуку індексу першого входження елемента в масив?,Array.prototype.indexOf,Array.prototype.includes,Array.prototype.find,Array.prototype.filter 
-Який метод використовується для пошуку індексу останнього входження елемента в масив?,Array.prototype.lastIndexOf,Array.prototype.indexOf,Array.prototype.includes,Array.prototype.find 
-Який метод використовується для пошуку першого елемента, що задовольняє умову?,Array.prototype.find,Array.prototype.filter,Array.prototype.map,Array.prototype.reduce 
-Який метод використовується для пошуку індексу першого елемента, що задовольняє умову?,Array.prototype.findIndex,Array.prototype.find,Array.prototype.filter,Array.prototype.map 
-Який метод використовується для перевірки, чи кожен елемент масиву задовольняє умову?,Array.prototype.every,Array.prototype.some,Array.prototype.find,Array.prototype.filter 
-Який метод використовується для перевірки, чи хоча б один елемент масиву задовольняє умову?,Array.prototype.some,Array.prototype.every,Array.prototype.find,Array.prototype.filter 
+Що таке DOM?,Document Object Model,Data Object Model,Document Oriented Model,Data Oriented Model
+Яка мета DOM?,To represent the structure of a web document,To style web pages,To store data,To manage user sessions
+Який метод використовується для вибору елемента за його ID?,getElementById,querySelector,getElementsByClassName,getElementsByTagName
+Який метод використовується для вибору елементів за їх класом?,getElementsByClassName,getElementById,querySelector,getElementsByTagName
+Який метод використовується для вибору елементів за їх тегом?,getElementsByTagName,getElementById,querySelector,getElementsByClassName
+Який метод використовується для вибору першого елемента, що відповідає CSS-селектору?,querySelector,getElementById,getElementsByClassName,getElementsByTagName
+Який метод використовується для вибору всіх елементів, що відповідають CSS-селектору?,querySelectorAll,getElementById,getElementsByClassName,getElementsByTagName
+Як змінити текстовий вміст елемента?,textContent,innerHTML,outerHTML,value
+Як змінити HTML-вміст елемента?,innerHTML,textContent,outerHTML,value
+Як додати новий елемент до DOM?,createElement,removeChild,getElementById,querySelector
+Як видалити елемент з DOM?,removeChild,createElement,getElementById,querySelector
+Як додати слухача подій до елемента?,addEventListener,removeEventListener,createElement,querySelector
+Як видалити слухача подій з елемента?,removeEventListener,addEventListener,createElement,querySelector
+Як отримати значення атрибута елемента?,getAttribute,setAttribute,removeAttribute,hasAttribute
+Як встановити значення атрибута елемента?,setAttribute,getAttribute,removeAttribute,hasAttribute
+Як видалити атрибут з елемента?,removeAttribute,getAttribute,setAttribute,hasAttribute
+Як перевірити, чи має елемент певний атрибут?,hasAttribute,getAttribute,setAttribute,removeAttribute
+Як змінити інлайн-стилі елемента?,style,classList,setAttribute,getAttribute
+Як додати клас до елемента?,classList.add,classList.remove,classList.toggle,classList.contains
+Як видалити клас з елемента?,classList.remove,classList.add,classList.toggle,classList.contains
+Як перемикати клас на елементі?,classList.toggle,classList.add,classList.remove,classList.contains
+Як перевірити, чи має елемент певний клас?,classList.contains,classList.add,classList.remove,classList.toggle
+Як отримати батьківський елемент?,parentNode,childNodes,nextSibling,previousSibling
+Як отримати дочірні вузли елемента?,childNodes,parentNode,nextSibling,previousSibling
+Як отримати наступний сусідній вузол елемента?,nextSibling,parentNode,childNodes,previousSibling
