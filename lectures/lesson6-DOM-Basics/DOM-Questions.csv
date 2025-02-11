@@ -1,0 +1,26 @@
+Питання, відповідь1, відповідь2, відповідь3, відповідь4
+Що означає DOM?,Модель об'єктів документа,Модель даних об'єкта,Документ орієнтована модель,Модель орієнтована на дані
+Яка мета DOM?,Представляти структуру веб-документа,Стилізувати веб-сторінки,Зберігати дані,Керувати сесіями користувачів
+Який метод використовується для вибору елемента за його ID?,getElementById,querySelector,getElementsByClassName,getElementsByTagName
+Який метод використовується для вибору елементів за їх класом?,getElementsByClassName,getElementById,querySelector,getElementsByTagName
+Який метод використовується для вибору елементів за їх тегом?,getElementsByTagName,getElementById,querySelector,getElementsByClassName
+Який метод використовується для вибору першого елемента, що відповідає CSS-селектору?,querySelector,getElementById,getElementsByClassName,getElementsByTagName
+Який метод використовується для вибору всіх елементів, що відповідають CSS-селектору?,querySelectorAll,getElementById,getElementsByClassName,getElementsByTagName
+Як змінити текстовий вміст елемента?,textContent,innerHTML,outerHTML,value
+Як змінити HTML-вміст елемента?,innerHTML,textContent,outerHTML,value
+Як додати новий елемент до DOM?,createElement,removeChild,getElementById,querySelector
+Як видалити елемент з DOM?,removeChild,createElement,getElementById,querySelector
+Як додати слухача подій до елемента?,addEventListener,removeEventListener,createElement,querySelector
+Як видалити слухача подій з елемента?,removeEventListener,addEventListener,createElement,querySelector
+Як отримати значення атрибута елемента?,getAttribute,setAttribute,removeAttribute,hasAttribute
+Як встановити значення атрибута елемента?,setAttribute,getAttribute,removeAttribute,hasAttribute
+Як видалити атрибут з елемента?,removeAttribute,getAttribute,setAttribute,hasAttribute
+Як перевірити, чи має елемент певний атрибут?,hasAttribute,getAttribute,setAttribute,removeAttribute
+Як змінити інлайн-стилі елемента?,style,classList,setAttribute,getAttribute
+Як додати клас до елемента?,classList.add,classList.remove,classList.toggle,classList.contains
+Як видалити клас з елемента?,classList.remove,classList.add,classList.toggle,classList.contains
+Як перемикати клас на елементі?,classList.toggle,classList.add,classList.remove,classList.contains
+Як перевірити, чи має елемент певний клас?,classList.contains,classList.add,classList.remove,classList.toggle
+Як отримати батьківський елемент?,parentNode,childNodes,nextSibling,previousSibling
+Як отримати дочірні вузли елемента?,childNodes,parentNode,nextSibling,previousSibling
+Як отримати наступний сусідній вузол елемента?,nextSibling,parentNode,childNodes,previousSibling
