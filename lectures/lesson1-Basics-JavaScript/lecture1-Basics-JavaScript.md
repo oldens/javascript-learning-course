@@ -2,6 +2,8 @@
 
 Ласкаво просимо на першу лекцію курсу вивчення JavaScript! У цій лекції ми розглянемо основи JavaScript, включаючи його історію, синтаксис та основні програмні концепції.
 
+Презентація https://github.com/oldens/javascript-learning-course/blob/main/lectures/lesson1-Basics-JavaScript/Osnovi-JavaScript-Kurs-dlya-pochatkivciv.pdf
+
 ## Зміст
 
 1. Вступ до JavaScript
