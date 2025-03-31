@@ -1,5 +1,7 @@
 # Лекція 4: Масиви та Цикли в JavaScript
 
+[PDF Презентація Лекції 4](./lecture4-Arrays-Loops.pdf)
+
 Ласкаво просимо на четверту лекцію курсу вивчення JavaScript! У цій лекції ми розглянемо масиви та цикли, включаючи вкладені масиви, доступ до даних масиву, зміну даних масиву, доступ до багатовимірних масивів та різні типи циклів.
 
 ## Зміст
@@ -205,106 +207,9 @@ for (let key in object) {
 
 У цій лекції ми розглянули масиви та цикли, включаючи вкладені масиви, доступ до даних масиву, зміну даних масиву, доступ до багатовимірних масивів та різні типи циклів. Ці основні концепції допоможуть вам розпочати програмування на JavaScript та підготують вас до більш складних тем у майбутніх лекціях.
 
-## CSV Questions
+## Summary of all materials in the lecture folder
 
-Питання,Варіант 1 (вірний),Варіант 2,Варіант 3,Варіант 4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.map(num => num * 2).filter(num => num > 4); console.log(result);,[6, 8],[2, 4, 6, 8],[4, 6, 8],[8, 6]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.filter(num => num % 2 === 0); console.log(result);,[2, 4],[1, 3],[1, 2, 3, 4],[4, 2]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.reduce((acc, num) => acc + num, 0); console.log(result);,10,24,0,4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.find(num => num > 2); console.log(result);,3,1,2,4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.every(num => num > 0); console.log(result);,true,false,undefined,null
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.some(num => num > 3); console.log(result);,true,false,undefined,null
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.slice(1, 3); console.log(result);,[2, 3],[1, 2],[3, 4],[1, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.splice(1, 2); console.log(result);,[2, 3],[1, 2],[3, 4],[1, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.concat([5, 6]); console.log(result);,[1, 2, 3, 4, 5, 6],[5, 6],[1, 2, 3, 4],[6, 5, 4, 3, 2, 1]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.join('-'); console.log(result);,1-2-3-4,1,2,3,4,1234,1 2 3 4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.reverse(); console.log(result);,[4, 3, 2, 1],[1, 2, 3, 4],[2, 3, 4, 1],[4, 1, 2, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.sort((a, b) => b - a); console.log(result);,[4, 3, 2, 1],[1, 2, 3, 4],[2, 3, 4, 1],[4, 1, 2, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.findIndex(num => num > 2); console.log(result);,2,1,3,4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.indexOf(3); console.log(result);,2,1,3,4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.includes(2); console.log(result);,true,false,undefined,null
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.fill(0); console.log(result);,[0, 0, 0, 0],[1, 2, 3, 4],[0, 1, 2, 3],[1, 2, 3, 0]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.copyWithin(1, 0); console.log(result);,[1, 1, 2, 3],[1, 2, 3, 4],[2, 3, 4, 1],[1, 1, 3, 4]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flat(); console.log(result);,[1, 2, 3, 4],[1, 2],[2, 3],[1, 3]
-What will be logged to the console? const numbers = [1, [2, 3], 4]; const result = numbers.flat(); console.log(result);,[1, 2, 3, 4],[1, [2, 3], 4],[2, 3, 4],[1, 3, 4]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.toString(); console.log(result);,1,2,3,4,1-2-3-4,1234,1 2 3 4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.valueOf(); console.log(result);,[1, 2, 3, 4],1,2,3,4,1234,1 2 3 4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.toLocaleString(); console.log(result);,1,2,3,4,1-2-3-4,1234,1 2 3 4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.toJSON(); console.log(result);,[1, 2, 3, 4],1,2,3,4,1234,1 2 3 4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = Array.from(numbers); console.log(result);,[1, 2, 3, 4],1,2,3,4,1234,1 2 3 4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = Array.of(5, 6, 7); console.log(result);,[5, 6, 7],[1, 2, 3, 4],[6, 7, 8],[7, 8, 9]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = Array.isArray(numbers); console.log(result);,true,false,undefined,null
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.push(5); console.log(result);,5,[1, 2, 3, 4, 5],4,[1, 2, 3, 4]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.pop(); console.log(result);,4,[1, 2, 3],3,[1, 2, 3, 4]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.shift(); console.log(result);,1,[2, 3, 4],2,[1, 2, 3, 4]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.unshift(0); console.log(result);,5,[0, 1, 2, 3, 4],4,[1, 2, 3, 4]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.map(num => num * 2); console.log(result);,[2, 4, 6, 8],[1, 2, 3, 4],[2, 3, 4, 5],[4, 6, 8, 10]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.filter(num => num > 2); console.log(result);,[3, 4],[1, 2],[2, 3, 4],[1, 3, 4]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.reduce((acc, num) => acc * num, 1); console.log(result);,24,10,1,4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.find(num => num < 3); console.log(result);,1,2,3,4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.every(num => num < 5); console.log(result);,true,false,undefined,null
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.some(num => num < 2); console.log(result);,true,false,undefined,null
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.slice(2); console.log(result);,[3, 4],[1, 2],[2, 3],[1, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.splice(2, 1); console.log(result);,[3],[1, 2],[2, 3],[1, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.concat([5, 6, 7]); console.log(result);,[1, 2, 3, 4, 5, 6, 7],[5, 6, 7],[1, 2, 3, 4],[6, 7, 8]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.join(' '); console.log(result);,1 2 3 4,1,2,3,4,1234,1-2-3-4
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.reverse(); console.log(result);,[4, 3, 2, 1],[1, 2, 3, 4],[2, 3, 4, 1],[4, 1, 2, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.sort((a, b) => a - b); console.log(result);,[1, 2, 3, 4],[4, 3, 2, 1],[2, 3, 4, 1],[4, 1, 2, 3]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.findIndex(num => num < 2); console.log(result);,0,1,2,3
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.indexOf(4); console.log(result);,3,2,1,0
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.includes(5); console.log(result);,false,true,undefined,null
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.fill(1, 2); console.log(result);,[1, 2, 1, 1],[1, 2, 3, 4],[1, 1, 1, 1],[1, 2, 3, 1]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.copyWithin(2, 0); console.log(result);,[1, 2, 1, 2],[1, 2, 3, 4],[2, 3, 4, 1],[1, 2, 1, 2]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 2]); console.log(result);,[1, 2, 2, 4, 3, 6, 4, 8],[1, 2, 3, 4],[2, 4, 6, 8],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 1]); console.log(result);,[1, 2, 2, 3, 3, 4, 4, 5],[1, 2, 3, 4],[2, 3, 4, 5],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 1]); console.log(result);,[1, 0, 2, 1, 3, 2, 4, 3],[1, 2, 3, 4],[0, 1, 2, 3],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * num]); console.log(result);,[1, 1, 2, 4, 3, 9, 4, 16],[1, 2, 3, 4],[1, 4, 9, 16],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 2]); console.log(result);,[1, 0.5, 2, 1, 3, 1.5, 4, 2],[1, 2, 3, 4],[0.5, 1, 1.5, 2],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 2]); console.log(result);,[1, 3, 2, 4, 3, 5, 4, 6],[1, 2, 3, 4],[3, 4, 5, 6],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 2]); console.log(result);,[1, -1, 2, 0, 3, 1, 4, 2],[1, 2, 3, 4],[-1, 0, 1, 2],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 3]); console.log(result);,[1, 3, 2, 6, 3, 9, 4, 12],[1, 2, 3, 4],[3, 6, 9, 12],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 3]); console.log(result);,[1, 0.3333333333333333, 2, 0.6666666666666666, 3, 1, 4, 1.3333333333333333],[1, 2, 3, 4],[0.3333333333333333, 0.6666666666666666, 1, 1.3333333333333333],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 3]); console.log(result);,[1, 4, 2, 5, 3, 6, 4, 7],[1, 2, 3, 4],[4, 5, 6, 7],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 3]); console.log(result);,[1, -2, 2, -1, 3, 0, 4, 1],[1, 2, 3, 4],[-2, -1, 0, 1],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 4]); console.log(result);,[1, 4, 2, 8, 3, 12, 4, 16],[1, 2, 3, 4],[4, 8, 12, 16],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 4]); console.log(result);,[1, 0.25, 2, 0.5, 3, 0.75, 4, 1],[1, 2, 3, 4],[0.25, 0.5, 0.75, 1],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 4]); console.log(result);,[1, 5, 2, 6, 3, 7, 4, 8],[1, 2, 3, 4],[5, 6, 7, 8],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 4]); console.log(result);,[1, -3, 2, -2, 3, -1, 4, 0],[1, 2, 3, 4],[-3, -2, -1, 0],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 5]); console.log(result);,[1, 5, 2, 10, 3, 15, 4, 20],[1, 2, 3, 4],[5, 10, 15, 20],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 5]); console.log(result);,[1, 0.2, 2, 0.4, 3, 0.6, 4, 0.8],[1, 2, 3, 4],[0.2, 0.4, 0.6, 0.8],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 5]); console.log(result);,[1, 6, 2, 7, 3, 8, 4, 9],[1, 2, 3, 4],[6, 7, 8, 9],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 5]); console.log(result);,[1, -4, 2, -3, 3, -2, 4, -1],[1, 2, 3, 4],[-4, -3, -2, -1],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 6]); console.log(result);,[1, 6, 2, 12, 3, 18, 4, 24],[1, 2, 3, 4],[6, 12, 18, 24],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 6]); console.log(result);,[1, 0.16666666666666666, 2, 0.3333333333333333, 3, 0.5, 4, 0.6666666666666666],[1, 2, 3, 4],[0.16666666666666666, 0.3333333333333333, 0.5, 0.6666666666666666],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 6]); console.log(result);,[1, 7, 2, 8, 3, 9, 4, 10],[1, 2, 3, 4],[7, 8, 9, 10],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 6]); console.log(result);,[1, -5, 2, -4, 3, -3, 4, -2],[1, 2, 3, 4],[-5, -4, -3, -2],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 7]); console.log(result);,[1, 7, 2, 14, 3, 21, 4, 28],[1, 2, 3, 4],[7, 14, 21, 28],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 7]); console.log(result);,[1, 0.14285714285714285, 2, 0.2857142857142857, 3, 0.42857142857142855, 4, 0.5714285714285714],[1, 2, 3, 4],[0.14285714285714285, 0.2857142857142857, 0.42857142857142855, 0.5714285714285714],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 7]); console.log(result);,[1, 8, 2, 9, 3, 10, 4, 11],[1, 2, 3, 4],[8, 9, 10, 11],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 7]); console.log(result);,[1, -6, 2, -5, 3, -4, 4, -3],[1, 2, 3, 4],[-6, -5, -4, -3],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 8]); console.log(result);,[1, 8, 2, 16, 3, 24, 4, 32],[1, 2, 3, 4],[8, 16, 24, 32],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 8]); console.log(result);,[1, 0.125, 2, 0.25, 3, 0.375, 4, 0.5],[1, 2, 3, 4],[0.125, 0.25, 0.375, 0.5],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 8]); console.log(result);,[1, 9, 2, 10, 3, 11, 4, 12],[1, 2, 3, 4],[9, 10, 11, 12],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 8]); console.log(result);,[1, -7, 2, -6, 3, -5, 4, -4],[1, 2, 3, 4],[-7, -6, -5, -4],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 9]); console.log(result);,[1, 9, 2, 18, 3, 27, 4, 36],[1, 2, 3, 4],[9, 18, 27, 36],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 9]); console.log(result);,[1, 0.1111111111111111, 2, 0.2222222222222222, 3, 0.3333333333333333, 4, 0.4444444444444444],[1, 2, 3, 4],[0.1111111111111111, 0.2222222222222222, 0.3333333333333333, 0.4444444444444444],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 9]); console.log(result);,[1, 10, 2, 11, 3, 12, 4, 13],[1, 2, 3, 4],[10, 11, 12, 13],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 9]); console.log(result);,[1, -8, 2, -7, 3, -6, 4, -5],[1, 2, 3, 4],[-8, -7, -6, -5],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 10]); console.log(result);,[1, 10, 2, 20, 3, 30, 4, 40],[1, 2, 3, 4],[10, 20, 30, 40],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 10]); console.log(result);,[1, 0.1, 2, 0.2, 3, 0.3, 4, 0.4],[1, 2, 3, 4],[0.1, 0.2, 0.3, 0.4],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 10]); console.log(result);,[1, 11, 2, 12, 3, 13, 4, 14],[1, 2, 3, 4],[11, 12, 13, 14],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 10]); console.log(result);,[1, -9, 2, -8, 3, -7, 4, -6],[1, 2, 3, 4],[-9, -8, -7, -6],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 11]); console.log(result);,[1, 11, 2, 22, 3, 33, 4, 44],[1, 2, 3, 4],[11, 22, 33, 44],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 11]); console.log(result);,[1, 0.09090909090909091, 2, 0.18181818181818182, 3, 0.2727272727272727, 4, 0.36363636363636365],[1, 2, 3, 4],[0.09090909090909091, 0.18181818181818182, 0.2727272727272727, 0.36363636363636365],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 11]); console.log(result);,[1, 12, 2, 13, 3, 14, 4, 15],[1, 2, 3, 4],[12, 13, 14, 15],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 11]); console.log(result);,[1, -10, 2, -9, 3, -8, 4, -7],[1, 2, 3, 4],[-10, -9, -8, -7],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 12]); console.log(result);,[1, 12, 2, 24, 3, 36, 4, 48],[1, 2, 3, 4],[12, 24, 36, 48],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 12]); console.log(result);,[1, 0.08333333333333333, 2, 0.16666666666666666, 3, 0.25, 4, 0.3333333333333333],[1, 2, 3, 4],[0.08333333333333333, 0.16666666666666666, 0.25, 0.3333333333333333],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 12]); console.log(result);,[1, 13, 2, 14, 3, 15, 4, 16],[1, 2, 3, 4],[13, 14, 15, 16],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 12]); console.log(result);,[1, -11, 2, -10, 3, -9, 4, -8],[1, 2, 3, 4],[-11, -10, -9, -8],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 13]); console.log(result);,[1, 13, 2, 26, 3, 39, 4, 52],[1, 2, 3, 4],[13, 26, 39, 52],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 13]); console.log(result);,[1, 0.07692307692307693, 2, 0.15384615384615385, 3, 0.23076923076923078, 4, 0.3076923076923077],[1, 2, 3, 4],[0.07692307692307693, 0.15384615384615385, 0.23076923076923078, 0.3076923076923077],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num + 13]); console.log(result);,[1, 14, 2, 15, 3, 16, 4, 17],[1, 2, 3, 4],[14, 15, 16, 17],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num - 13]); console.log(result);,[1, -12, 2, -11, 3, -10, 4, -9],[1, 2, 3, 4],[-12, -11, -10, -9],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num * 14]); console.log(result);,[1, 14, 2, 28, 3, 42, 4, 56],[1, 2, 3, 4],[14, 28, 42, 56],[1, 3, 5, 7]
-What will be logged to the console? const numbers = [1, 2, 3, 4]; const result = numbers.flatMap(num => [num, num / 14]); console.log(result);,[1, 0.07142857142857142, 2, 0.14285714285714285, 3, 0.21428571428571427, 4, 0.2857142857142857],[1, 2, 3, 4],[0.07142857142857142, 0.14285714285714285, 0.21428571428571427, 0.2857142857142857],[1, 3, 5, 7]
+- `lecture4-Arrays-Loops.md`: Основний текст лекції з масивів та циклів у JavaScript.
+- `lecture4-Arrays-Loops.pdf`: Презентація лекції у форматі PDF.
+- `lecture4-Arrays-Loops.js`: Приклади коду JavaScript, що використовуються у лекції.
+- `exercise4-Arrays-Loops.md`: Вправа для практики роботи з масивами та циклами.

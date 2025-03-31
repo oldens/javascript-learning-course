@@ -1,5 +1,7 @@
 # Лекція 6: Об’єкти в JavaScript
 
+[PDF Презентація Лекції 6](./lecture7-Objects.pdf)
+
 ## Зміст
 
 1. Що таке об’єкти?
@@ -231,3 +233,9 @@ console.log(config.theme); // "dark"
 4. Розумно використовуйте вкладені об’єкти для складних структур.
 
 Цей матеріал покриває базові та розширені аспекти роботи з об’єктами в JavaScript, демонструючи їхню гнучкість і потужність.
+
+## Summary of all materials in the lecture folder
+
+- `lecture7-Objects.md`: Основний текст лекції з об’єктів у JavaScript.
+- `lecture7-Objects.pdf`: Презентація лекції у форматі PDF.
+- `exercise7-Objects.md`: Вправа для практики роботи з об’єктами.
