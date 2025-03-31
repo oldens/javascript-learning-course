@@ -1,5 +1,7 @@
 # КУРС “ОСНОВИ JAVASCRIPT”
 
+блукет практично по всіх темах https://dashboard.blooket.com/set/6797a23cf1f249a33cf41e4a
+
 ## ВСТУПНА ЧАСТИНА
 
 ### ВСТУП
