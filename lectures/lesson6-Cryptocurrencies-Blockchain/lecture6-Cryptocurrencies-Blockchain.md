@@ -1,6 +1,7 @@
 # Лекція 6: Криптовалюти та блокчейн
 
 [PDF Презентація Лекції 6](./lecture6-Cryptocurrencies-Blockchain.pdf)
+https://dashboard.blooket.com/set/67ea696d800f8fd4069c866b
 
 ## Вступ
 
