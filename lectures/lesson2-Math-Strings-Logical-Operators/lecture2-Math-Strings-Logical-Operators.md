@@ -1,5 +1,7 @@
 # Лекція 2: Математика, Рядки та Логічні Оператори в JavaScript
 
+[PDF Презентація Лекції 2](./lecture2-Math-Strings-Logical-Operators.pdf)
+
 Ласкаво просимо на другу лекцію курсу вивчення JavaScript! У цій лекції ми розглянемо базову математику, десяткові числа, залишок від ділення, скорочені оператори, роботу з рядками, логічні оператори та умовні конструкції.
 
 ## Зміст
@@ -212,3 +214,9 @@ switch (деньТижня) {
 console.log(назваДня); // "Середа"
 ```
 
+## Summary of all materials in the lecture folder
+
+- `lecture2-Math-Strings-Logical-Operators.md`: Основний текст лекції з математики, рядків та логічних операторів у JavaScript.
+- `lecture2-Math-Strings-Logical-Operators.pdf`: Презентація лекції у форматі PDF.
+- `lecture2-Math-Strings-Logical-Operators.js`: Приклади коду JavaScript, що використовуються у лекції.
+- `exercise2-Guess-the-Number-Game.md`: Вправа для створення гри "Вгадати число".

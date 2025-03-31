@@ -1,5 +1,7 @@
 # Основи роботи з DOM (DOM Basics)
 
+[PDF Презентація Лекції 6](./lecture6-DOM-Basics.pdf)
+
 ## Що таке DOM?
 
 DOM (Document Object Model) — це програмна інтерфейсна модель для HTML-документів, яка представляє структуру веб-сторінки як дерево об’єктів. JavaScript може використовувати DOM для маніпуляцій елементами сторінки, їх створення, зміни або видалення в реальному часі. DOM — це спосіб представлення HTML-документа у вигляді дерева, де кожен елемент сторінки є вузлом (node). Через DOM JavaScript отримує доступ до HTML і дозволяє змінювати як структуру сторінки, так і її стилі або вміст.
@@ -209,3 +211,10 @@ const nextSibling = element.nextSibling;
 const element = document.getElementById('my-id');
 const previousSibling = element.previousSibling;
 ```
+
+## Summary of all materials in the lecture folder
+
+- `lecture6-DOM-Basics.md`: Основний текст лекції з основ роботи з DOM.
+- `lecture6-DOM-Basics.pdf`: Презентація лекції у форматі PDF.
+- `DOM-Questions.csv`: Питання для перевірки знань з основ роботи з DOM.
+- `exercise6-DOM-Basics.md`: Вправа для практики роботи з DOM.
