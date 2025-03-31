@@ -1,5 +1,7 @@
 # Лекція 1: Основи JavaScript
 
+[PDF Презентація Лекції 1](./lecture1-Basics-JavaScript.pdf)
+
 Ласкаво просимо на першу лекцію курсу вивчення JavaScript! У цій лекції ми розглянемо основи JavaScript, включаючи його історію, синтаксис та основні програмні концепції.
 
 ## Зміст
@@ -96,3 +98,10 @@ console.log(greet("Аліса")); // Вивід: Привіт, Аліса!
 ```
 
 Код JavaScript для обробки події кліку на кнопці буде додано у файлі `lecture1.js`.
+
+## Summary of all materials in the lecture folder
+
+- `lecture1-Basics-JavaScript.md`: Основний текст лекції з основ JavaScript.
+- `lecture1-Basics-JavaScript.pdf`: Презентація лекції у форматі PDF.
+- `lecture1-Basics-JavaScript.js`: Приклади коду JavaScript, що використовуються у лекції.
+- `exercise1-Create-Simple-Website.md`: Вправа для створення простого веб-сайту з кнопкою "Home work".
