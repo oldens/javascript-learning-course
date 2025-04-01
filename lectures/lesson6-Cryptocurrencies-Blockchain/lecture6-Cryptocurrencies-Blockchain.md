@@ -4,11 +4,15 @@
 
 https://dashboard.blooket.com/set/67ea696d800f8fd4069c866b
 
-Проект генерація ключів і підписів повідомлень: https://github.com/oldens/key-generator-message-signer
+Генерація ключів і підписів повідомлень:
+https://github.com/oldens/key-generator-message-signer
+
 https://oldens.github.io/key-generator-message-signer/
 
 
-Проект обміну повідомленнями, емуляція блокчейну: https://github.com/oldens/blockchain-project
+Проект обміну повідомленнями, емуляція блокчейну:
+https://github.com/oldens/blockchain-project
+
 https://oldens.github.io/blockchain-project/
 
 
