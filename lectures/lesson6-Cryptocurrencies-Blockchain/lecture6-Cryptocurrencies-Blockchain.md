@@ -4,6 +4,14 @@
 
 https://dashboard.blooket.com/set/67ea696d800f8fd4069c866b
 
+Проект генерація ключів і підписів повідомлень: https://github.com/oldens/key-generator-message-signer
+https://oldens.github.io/key-generator-message-signer/
+
+
+Проект обміну повідомленнями, емуляція блокчейну: https://github.com/oldens/blockchain-project
+https://oldens.github.io/blockchain-project/
+
+
 ## Вступ
 
 Вітаємо вас на всеохоплюючому курсі з основ криптовалют та блокчейн-технологій! Ми розглянемо фундаментальні концепції криптопростору з особливим акцентом на Bitcoin – першій та найвпливовішій криптовалюті світу.
