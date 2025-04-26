@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+.student {
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 2s all;
+    /* display: block; */
+}
+
+.student:hover {
+    opacity: 20%;
+    background-color: yellow;
+    box-shadow: 4px 4px grey;
+
+}
+
+.student img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.student p {
+    font-size: 16px;
+    color: #666;
+}
+
+.links {
+    font-size: 32px;
+}
+
+.main_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu img {
+    width: 10em;
+}
+
+.box {
+    position: relative;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,
+        #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+        #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff
+    );
+    background-size: 300%;
+    animation: border 12s linear infinite;
+}
+
+.box::after {
+    filter: blur(50px);
+}
+
+@keyframes border {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300%;
+    }
+}
