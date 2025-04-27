@@ -6,10 +6,13 @@
 
 **Резюме:** Знайомимося з Git для відстеження змін у коді та GitHub для зберігання і спільної роботи над проектами; вчимося базовим командам (clone, add, commit, push) для збереження нашої роботи.
 
-https://youtu.be/fLhISCl2euQ 
-https://youtu.be/E3IoNCWyWPc
-https://youtu.be/7k4vpaWTA3I
-https://youtu.be/fIGpmJspbC0
+https://youtu.be/fLhISCl2euQ Як відкотитися до попередньої версії в Git? Простий спосіб!
+
+https://youtu.be/E3IoNCWyWPc Як опублікувати сайт через GitHub Pages? Легка інструкція!
+
+https://youtu.be/7k4vpaWTA3I Як підключити існуючий проєкт до GitHub? Покрокова інструкція!
+
+https://youtu.be/fIGpmJspbC0 Створюємо проект з нуля: GitHub, VS Code, HTML – покрокова інструкція!
 
 
 ### Урок 0.2: Публікація Сайту в Інтернеті
