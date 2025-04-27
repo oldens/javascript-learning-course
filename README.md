@@ -131,3 +131,44 @@
 - [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [JavaScript.info](https://javascript.info/)
 - [W3Schools: JavaScript Tutorial](https://www.w3schools.com/js/)
+
+## Посилання на папки уроків
+
+### Блок 0: Інструменти та Робочий Процес
+- [Урок 0.1: Git та GitHub – Керування Кодом](tools_and_workflow/lessons%2001%20Git%20та%20GitHub)
+- [Урок 0.2: Публікація Сайту в Інтернеті](tools_and_workflow/lessons%2002%20Публікація%20Сайту%20в%20Інтернеті)
+
+### Блок 1: Основи Веб-сторінок (HTML та CSS)
+- [Урок 1.1: Вступ до Вебу та HTML](html_css_block/lessons%2001%20Структура%20html,%20Елементи,%20Теги)
+- [Урок 1.2: Основні теги HTML для контенту](html_css_block/lessons%2002%20CSS)
+- [Урок 1.3: Посилання та Зображення в HTML](html_css_block/lessons%2003%20Посилання%20та%20Зображення%20в%20HTML)
+- [Урок 1.4: Вступ до CSS та Способи Підключення](html_css_block/lessons%2004%20Вступ%20до%20CSS%20та%20Способи%20Підключення)
+- [Урок 1.5: CSS Селектори та Робота з Текстом/Фоном](html_css_block/lessons%2005%20CSS%20Селектори%20та%20Робота%20з%20Текстом%20Фоном)
+- [Урок 1.6: Блокова Модель CSS (Box Model)](html_css_block/lessons%2006%20Блокова%20Модель%20CSS%20(Box%20Model))
+- [Урок 1.7: Організація Проекту та Більше CSS Властивостей](html_css_block/lessons%2007%20Організація%20Проекту%20та%20Більше%20CSS%20Властивостей)
+- [Урок 1.8: Основи Верстки: Flexbox](html_css_block/lessons%2008%20Основи%20Верстки%20Flexbox)
+- [Урок 1.9: Псевдокласи, Псевдоелементи та Переходи](html_css_block/lessons%2009%20Псевдокласи,%20Псевдоелементи%20та%20Переходи)
+- [Урок 1.10: Позиціонування та Анімації (Оглядово)](html_css_block/lessons%2010%20Позиціонування%20та%20Анімації%20(Оглядово))
+
+### Блок 2: Основи JavaScript
+- [Урок 2.1: Перші кроки в JavaScript](javascript/lesson1-Basics-JavaScript)
+- [Урок 2.2: Оператори та Логіка](javascript/lesson2-Math-Strings-Logical-Operators)
+- [Урок 2.3: Керування потоком виконання](javascript/lesson3-Functions-Arguments-Parameters-Scope-Return)
+- [Урок 2.4: Функції](javascript/lesson4-Arrays-Loops)
+- [Урок 2.5: Масиви та Цикли](javascript/lesson5-Algorithms)
+- [Урок 2.6: Об'єкти](javascript/lesson6-DOM-Basics)
+- [Урок 2.7: Основи DOM](javascript/lesson7-Objects)
+- [Урок 2.8: Проект 1 - Простий Калькулятор](javascript/lesson8-OOP)
+- [Урок 2.9: Вступ до ООП](javascript/lesson9-Project1-Simple-Calculator)
+- [Урок 2.10: Проект 2 - Гра BlackJack](javascript/lesson10-Project2-BlackJack)
+- [Урок 2.11: Алгоритми (Опціонально/Поглиблено)](javascript/lesson11-Algorithms)
+- [Урок 2.12: Додаткові теми JS (Опціонально)](javascript/lesson12-Additional-JS-Topics)
+
+### Блок 3: Вступ до Криптографії та Блокчейну
+- [Урок 3.1: Основи Криптографії, Блокчейн та Bitcoin](cryptography_and_blockchain/lesson1-Basics-Cryptography-Blockchain-Bitcoin)
+- [Урок 3.2: Ethereum, Смарт-Контракти та Інші Криптовалюти](cryptography_and_blockchain/lesson2-Ethereum-Smart-Contracts-Other-Cryptocurrencies)
+- [Урок 3.3: Практикум: Створення Концепції "Своєї Монети" (Симуляція)](cryptography_and_blockchain/lesson3-Create-Your-Own-Coin-Simulation)
+
+### Блок 4: Швидка Розробка Сайтів
+- [Урок 4.1: Bootstrap – Готові Компоненти для Сайту](html_css_block/lessons%2011%20Bootstrap%20Готові%20Компоненти%20для%20Сайту)
+- [Урок 4.2: Публікація Bootstrap-сайту на GitHub Pages](html_css_block/lessons%2012%20Публікація%20Bootstrap-сайту%20на%20GitHub%20Pages)
