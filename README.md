@@ -1,5 +1,15 @@
 # Сучасна Веб-розробка та Технології (HTML, CSS, JS, Git, Crypto) для 8 класу
 
+## Матеріали для учнів
+
+- [Підсумкова презентація курсу](./Suchasna-Veb-rozrobka-ta-Tehnologiyi.pdf)
+
+## Матеріали для педагогів
+
+- [Педагогічна концепція та реалізація курсу](./Pedagogichna-Koncepciya-ta-Realizaciya-Kursu-Suchasna-Veb-rozrobka-ta-Tehnologiyi.pdf)
+
+---
+
 ## Зміст репозиторію
 
 - [Блок 0: Інструменти та Робочий Процес](./tools_and_workflow)
