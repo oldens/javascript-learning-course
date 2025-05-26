@@ -58,7 +58,5 @@
 - [JavaScript.info](https://javascript.info/)
 - [W3Schools: JavaScript Tutorial](https://www.w3schools.com/js/)
 
----
-
 > **Увага!**
 > Для кожного модуля використовуйте відповідну папку. Всі практичні завдання та проекти розміщені у папці [projects](./projects).
